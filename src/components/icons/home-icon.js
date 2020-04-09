@@ -6,6 +6,7 @@ import style from '../../styles/icon.module.css'
 function HomeIcon({ className }) {
   return (
     <svg
+      aria-hidden="true"
       viewBox="0 0 16 16"
       height="16"
       width="16"

@@ -8,7 +8,6 @@ image: ../../images/paper-53-expanded-guide-feature.jpg
 categories: [mastering-paper]
 tags: [Paper for iOS, tutorial, Apple]
 toc: true
-featured: true
 comments: true
 comments_locked: true
 ---

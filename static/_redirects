@@ -1,6 +1,8 @@
 # Redirect default Netlify subdomain to primary domain
 https://next-mademistakes.netlify.com/* https://mademistakes.com/:splat 301!
 http://next-mademistakes.netlify.com/* https://mademistakes.com/:splat 301!
+https://next-mademistakes.netlify.app/* https://mademistakes.com/:splat 301!
+http://next-mademistakes.netlify.app/* https://mademistakes.com/:splat 301!
 
 # ----------------------------------------------------------------------
 # Page redirects

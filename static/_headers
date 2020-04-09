@@ -8,3 +8,7 @@
 
 /sw.js   # Gatsby's default service worker file path
    Cache-Control: no-cache
+
+/static/*
+   Cache-Control: public
+   Cache-Control: max-age=31536000

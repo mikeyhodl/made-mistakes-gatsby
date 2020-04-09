@@ -32,12 +32,12 @@
 
   &:hover {
     background-color: color-mod(var(--button-background-color) tint(25%));
-    color: #fff;
+    color: var(--button-text-color);
     text-decoration: none;
   }
 
   &:visited {
-    color: #fff;
+    color: var(--button-text-color);
   }
 
   &:active {
@@ -209,6 +209,7 @@
     font-size: 0.5em;
     line-height: 2;
     text-transform: uppercase;
+    opacity: 0.75;
   }
 }
 

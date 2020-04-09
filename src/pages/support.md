@@ -4,7 +4,6 @@ path: /support/
 date: 2016-08-26
 last_modified_at: 2019-12-31T11:06:32-05:00
 excerpt: "If you like the free content I provide on Made Mistakes, here's how to show your thanks and motivate me to create more of it."
-toc: true
 ---
 
 The tutorials, Jekyll themes, and other articles I publish have been a true labor of love for me. If you've found any of this content useful here's how to show your thanks and motivate me to create more.

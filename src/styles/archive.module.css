@@ -64,6 +64,7 @@
     line-height: 1.5;
     box-decoration-break: clone;
     background-color: var(--text-color);
+    mask-image: url('../images/dust-and-scratches.png');
   }
 }
 
@@ -96,6 +97,34 @@
     grid-column-start: 3;
     grid-row-end: 3;
     grid-column-end: 5;
+  }
+
+  &:after {
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    content: '';
+    width: 300%;
+    height: 300%;
+    opacity: 0.3;
+    background-image: url('../images/asphalt-dark.png');
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: grain 8s steps(10) infinite;
+    }
+  }
+
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
   }
 }
 
@@ -172,8 +201,8 @@
     -webkit-overflow-scrolling: touch;
 
     > * {
-      flex: 1 0 90%;
-      margin-right: 1rem;
+      flex: 1 0 240px;
+      margin-right: 2rem;
     }
   }
 }

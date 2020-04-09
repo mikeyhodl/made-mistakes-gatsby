@@ -32,6 +32,10 @@ html {
 body {
   margin: 0;
   line-height: var(--line-height);
+
+  @media (--small-down) {
+    font-size: var(--text-sm)
+  }
 }
 
 /**

@@ -1,6 +1,8 @@
 .entry {
   position: relative;
   max-width: var(--text-width);
+  display: flex;
+  flex-direction: column;
 
   a,
   a:active,
@@ -45,6 +47,7 @@
 }
 
 .meta {
+  margin-top: 0.25em;
   margin-bottom: 0.75em;
   font-family: var(--monospace-font);
   font-size: var(--text-xs);
@@ -76,4 +79,33 @@
 
 .cover {
   margin-bottom: 0.5rem;
+  order: -1;
+
+  &:after {
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    content: '';
+    width: 300%;
+    height: 300%;
+    opacity: 0.4;
+    background-image: url('../images/asphalt-dark.png');
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: grain 8s steps(10) infinite;
+    }
+  }
+
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
 }

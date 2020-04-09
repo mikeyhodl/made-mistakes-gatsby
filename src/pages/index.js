@@ -31,7 +31,7 @@ const HomePage = ({ data }) => {
           <h1 className={style.heading}>
             <span>
               Made Mistakes is the personal site of{' '}
-              <a href="/about/">Michael Rose</a>.
+              <a href="/about/">Michael&nbsp;Rose</a>.
             </span>
           </h1>
           <div className={style.intro}>

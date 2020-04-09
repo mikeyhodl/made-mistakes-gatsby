@@ -6,6 +6,7 @@ import style from '../../styles/icon.module.css'
 function MadeMistakesIcon({ className }) {
   return (
     <svg
+      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       width="116.228"
       height="38.652"

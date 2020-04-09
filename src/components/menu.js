@@ -40,10 +40,11 @@ const Menu = ({ mainMenu, onChangeTheme }) => {
           className={style.themeToggle}
           onClick={onChangeTheme}
           type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
         >
           <div className={style.themeToggleInner}>
             <span className={style.themeToggleIcon} />
-            <span className={style.themeToggleLabel}>Toggle dark mode</span>
           </div>
         </button>
       </div>

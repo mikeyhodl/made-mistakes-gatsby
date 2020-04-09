@@ -6,6 +6,7 @@ import style from '../../styles/icon.module.css'
 function AmazonIcon({ className }) {
   return (
     <svg
+      aria-hidden="true"
       viewBox="9.084 9.084 17.25 17.25"
       height="17.25"
       width="17.25"
