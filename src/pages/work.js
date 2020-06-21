@@ -40,7 +40,9 @@ const WorksPage = ({ data }) => {
               developed.
             </p>
           </div>
-          <h2 className={style.subHeading}>Featured work</h2>
+          <h2 className={style.subHeading}>
+            <span>Featured work</span>
+          </h2>
           <div className={style.gridList}>
             {posts.map(({ node }) => {
               const {
@@ -62,17 +64,19 @@ const WorksPage = ({ data }) => {
             })}
           </div>
           <h2 className={style.subHeading}>
-            <Octicon
-              icon={MarkGithub}
-              verticalAlgin="middle"
-              className={style.icon}
-            />{' '}
-            Open source contributions
+            <span>
+              <Octicon
+                icon={MarkGithub}
+                verticalAlgin="middle"
+                className={style.icon}
+              />{' '}
+              Open source contributions
+            </span>
           </h2>
           {github && (
             <div>
               {github.viewer.repositories.nodes
-                .map(repo => <Repository key={repo.name} repo={repo} />)
+                .map((repo) => <Repository key={repo.name} repo={repo} />)
                 .reverse()}
               <a href="https://github.com/mmistakes" className="btn">
                 See more on GitHub

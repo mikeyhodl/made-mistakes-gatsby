@@ -40,7 +40,7 @@ const Categories = ({
   const metaImage = site.image
 
   // Sort object alphabetically function
-  const propComparator = propName => (a, b) =>
+  const propComparator = (propName) => (a, b) =>
     a[propName].toLowerCase() == b[propName].toLowerCase()
       ? 0
       : a[propName].toLowerCase() < b[propName].toLowerCase()
@@ -72,10 +72,12 @@ const Categories = ({
           )}
         </div>
         <div className={style.content}>
-          <h2 className={style.subHeading}>Browse by topic</h2>
+          <h2 className={style.subHeading}>
+            <span>Browse by topic</span>
+          </h2>
           <div className={style.columnList} style={{ marginBottom: '3rem' }}>
             <ul>
-              {group.sort(propComparator(`fieldValue`)).map(tag => (
+              {group.sort(propComparator(`fieldValue`)).map((tag) => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tag/${_.slugify(tag.fieldValue)}/`}>
                     <strong>{tag.fieldValue}</strong>{' '}

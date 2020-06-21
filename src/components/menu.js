@@ -43,9 +43,9 @@ const Menu = ({ mainMenu, onChangeTheme }) => {
           aria-label="Toggle dark mode"
           title="Toggle dark mode"
         >
-          <div className={style.themeToggleInner}>
+          <span className={style.themeToggleInner}>
             <span className={style.themeToggleIcon} />
-          </div>
+          </span>
         </button>
       </div>
     </>

@@ -84,6 +84,7 @@ module.exports = {
   },
   plugins: [
     'babel-preset-gatsby',
+    'gatsby-plugin-preact',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
@@ -189,7 +190,7 @@ module.exports = {
               urlOverrides: [
                 {
                   id: 'youtube',
-                  embedURL: videoId =>
+                  embedURL: (videoId) =>
                     `https://www.youtube-nocookie.com/embed/${videoId}`,
                 },
               ],
@@ -281,7 +282,7 @@ module.exports = {
             }
         }`,
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
+          allSitePage.edges.map((edge) => {
             return {
               url: site.siteMetadata.siteUrl + edge.node.path,
               changefreq: 'daily',
@@ -363,7 +364,7 @@ module.exports = {
               }
             `,
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 const {
                   node: {
                     frontmatter: { title, date, path, excerpt, image },
@@ -374,8 +375,10 @@ module.exports = {
 
                 const permalink = site.siteMetadata.siteUrl + path
                 const imageElement = image
-                  ? `<p><img src="${site.siteMetadata.siteUrl +
-                      image.childImageSharp.fixed.src}" alt=""></p>`
+                  ? `<p><img src="${
+                      site.siteMetadata.siteUrl +
+                      image.childImageSharp.fixed.src
+                    }" alt=""></p>`
                   : ``
                 let mainContent = html
                 // Hacky workaround for relative paths https://github.com/gaearon/overreacted.io/issues/65
@@ -394,8 +397,9 @@ module.exports = {
                   .replace(/data-src=/g, 'src=')
                   // Replace data-srcset with srcset from remark lazyload plugin
                   .replace(/data-srcset=/g, 'srcset=')
-                const footerContent = `<p><a href="${site.siteMetadata.siteUrl +
-                  edge.node.frontmatter.path}">${
+                const footerContent = `<p><a href="${
+                  site.siteMetadata.siteUrl + edge.node.frontmatter.path
+                }">${
                   edge.node.frontmatter.title
                 }</a> was originally published on Made Mistakes.</p>`
 

@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import { useInView } from 'react-intersection-observer'
 
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Document from '../components/document'
 import CommentsList from '../components/comments/comments-list'
-import CommentForm from '../components/comments/comment-form'
+// import CommentForm from '../components/comments/comment-form'
 import Pagination from '../components/pagination'
 import site from '../../config/site'
 
 import style from '../styles/post.module.css'
+
+const CommentForm = lazy(() => import('../components/comments/comment-form'))
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -44,6 +47,9 @@ const PostTemplate = ({ data, pageContext }) => {
   const previousLabel = previous && previous.frontmatter.title
   const nextPath = next && next.frontmatter.path
   const nextLabel = next && next.frontmatter.title
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  })
 
   return (
     <Layout>
@@ -93,7 +99,13 @@ const PostTemplate = ({ data, pageContext }) => {
                   </div>
                 </div>
               ) : (
-                <CommentForm slug={path} />
+                <div ref={ref}>
+                  {inView && (
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <CommentForm slug={path} />
+                    </Suspense>
+                  )}
+                </div>
               )}
             </>
           )}

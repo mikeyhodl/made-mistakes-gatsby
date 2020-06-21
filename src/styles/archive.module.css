@@ -33,6 +33,7 @@
   position: relative;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-left: -1.5rem;
   max-width: var(--text-width);
   align-self: flex-start;
   width: 100%;
@@ -44,6 +45,7 @@
   font-feature-settings: 'kern' on, 'liga' on, 'clig' on, 'calt' on;
   line-height: 1.25;
   z-index: 99;
+  transform: rotate(-1deg);
 
   @media (--medium-up) {
     grid-column-start: 2;
@@ -60,7 +62,7 @@
   }
 
   span {
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0 1.5rem;
     line-height: 1.5;
     box-decoration-break: clone;
     background-color: var(--text-color);
@@ -69,11 +71,41 @@
 }
 
 .subHeading {
+  position: relative;
   margin-top: 3rem;
-  margin-bottom: 2rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid var(--text-color);
-  font-size: var(--text-base);
+  margin-bottom: calc(1.5rem + 2px);
+  align-self: flex-start;
+  width: 100%;
+  color: var(--background-color);
+  border-bottom: 3px solid var(--text-color);
+  font-family: var(--serif-font);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'kern' on, 'liga' on, 'clig' on, 'calt' on;
+  z-index: 99;
+
+  @media (--medium-up) {
+    grid-column-start: 2;
+    padding-right: 5%;
+    font-size: var(--text-xl);
+  }
+
+  @media (--large-up) {
+    font-size: var(--text-xl);
+  }
+
+  a {
+    color: var(--background-color);
+  }
+
+  span {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    box-decoration-break: clone;
+    background-color: var(--text-color);
+    mask-image: url('../images/dust-and-scratches.png');
+  }
 }
 
 .intro {

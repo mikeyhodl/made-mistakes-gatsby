@@ -49,7 +49,34 @@ const HomePage = ({ data }) => {
           />
         </div>
         <div className={style.content}>
-          <h2 className={style.subHeading}>Featured articles</h2>
+          <h2 className={style.subHeading}>
+            <span>Recent posts</span>
+          </h2>
+          <div className={style.list}>
+            {recentPosts.map(({ node }) => {
+              const {
+                id,
+                excerpt: autoExcerpt,
+                timeToRead,
+                frontmatter: { title, date, date_pretty, path, excerpt },
+              } = node
+
+              return (
+                <Entry
+                  key={id}
+                  title={title}
+                  date={date}
+                  datePretty={date_pretty}
+                  path={path}
+                  timeToRead={timeToRead}
+                  excerpt={excerpt || autoExcerpt}
+                />
+              )
+            })}
+          </div>
+          <h2 className={style.subHeading}>
+            <span>Featured articles</span>
+          </h2>
           <div className={style.gridList}>
             {featuredPosts.map(({ node }) => {
               const {
@@ -82,30 +109,9 @@ const HomePage = ({ data }) => {
               )
             })}
           </div>
-          <h2 className={style.subHeading}>Recent posts</h2>
-          <div className={style.list}>
-            {recentPosts.map(({ node }) => {
-              const {
-                id,
-                excerpt: autoExcerpt,
-                timeToRead,
-                frontmatter: { title, date, date_pretty, path, excerpt },
-              } = node
-
-              return (
-                <Entry
-                  key={id}
-                  title={title}
-                  date={date}
-                  datePretty={date_pretty}
-                  path={path}
-                  timeToRead={timeToRead}
-                  excerpt={excerpt || autoExcerpt}
-                />
-              )
-            })}
-          </div>
-          <h2 className={style.subHeading}>Explore more on this site</h2>
+          <h2 className={style.subHeading}>
+            <span>Explore more on this site</span>
+          </h2>
           <div>
             <ul className={`${style.gridListExpanded} ${style.navList}`}>
               <li key="articles">

@@ -46,7 +46,7 @@
   }
 }
 
-.meta {
+.meta:not(:empty) {
   margin-top: 0.25em;
   margin-bottom: 0.75em;
   font-family: var(--monospace-font);
