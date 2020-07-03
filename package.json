@@ -75,7 +75,7 @@
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "babel-eslint": "^10.1.0",
-    "babel-preset-gatsby": "^0.4.2",
+    "babel-preset-gatsby": "^0.5.1",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
