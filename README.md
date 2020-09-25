@@ -1,7 +1,8 @@
 # [Made Mistakes](https://mademistakes.com) Source Code
 
-This is the source code of Made Mistakes, a personal blog and portfolio built 
-with [Gatsby](https://www.gatsbyjs.org/), [Travis CI](https://travis-ci.org/),  and [Netlify](https://www.netlify.com/).
+This is the source code of Made Mistakes, a personal blog and portfolio built with [Gatsby](https://www.gatsbyjs.org/), [Travis CI](https://travis-ci.org/), and [Netlify](https://www.netlify.com/). Feel free to modify, improve, and learn from it.
+
+If you're looking for a repo to fork and replace with your own content, I built [several themes](https://mademistakes.com/work/jekyll-themes/) for that purpose...
 
 ## Getting started
 
