@@ -34,7 +34,7 @@ const FaqsPage = ({
           free to reach out and <Link to="/contact/">ask me</Link>.
         </p>
         <ul>
-          {edges.map(faq => (
+          {edges.map((faq) => (
             <li key={faq.node.id}>
               <Link to={faq.node.frontmatter.path}>
                 {faq.node.frontmatter.title}

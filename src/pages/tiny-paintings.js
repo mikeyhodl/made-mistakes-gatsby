@@ -51,13 +51,15 @@ class Gallery extends React.Component {
       document.documentElement.offsetHeight -
       (window.pageYOffset + window.innerHeight)
     if (this.state.showingMore && distanceToBottom < 100) {
-      this.setState(prevState => ({ postsToShow: prevState.postsToShow + 20 }))
+      this.setState((prevState) => ({
+        postsToShow: prevState.postsToShow + 20,
+      }))
     }
     this.ticking = false
   }
 
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges.map(e => e.node)
+    const posts = this.props.data.allMarkdownRemark.edges.map((e) => e.node)
     const postsSize = this.props.data.allMarkdownRemark.edges.length
 
     return (
@@ -97,7 +99,7 @@ class Gallery extends React.Component {
           </div>
           <div className={style.gallery}>
             <Masonry className={style.grid}>
-              {posts.slice(0, this.state.postsToShow).map(post => {
+              {posts.slice(0, this.state.postsToShow).map((post) => {
                 const image = post.frontmatter.thumbnail
                   ? post.frontmatter.thumbnail
                   : post.frontmatter.image

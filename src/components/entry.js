@@ -51,7 +51,7 @@ const Entry = ({
           )}
           {tags ? (
             <div className={style.tags}>
-              {tags.map(tag => (
+              {tags.map((tag) => (
                 <Link to={`/tag/${_.slugify(tag)}/`} key={_.slugify(tag)}>
                   <span>#{tag}</span>
                 </Link>

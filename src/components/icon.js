@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import style from '../styles/icon.module.css'
 
-const Icon = props => {
+const Icon = (props) => {
   const { d, size = '1em', label, style: styles } = props
 
   return (

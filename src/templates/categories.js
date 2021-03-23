@@ -41,7 +41,7 @@ const Categories = ({
 
   // Sort object alphabetically function
   const propComparator = (propName) => (a, b) =>
-    a[propName].toLowerCase() == b[propName].toLowerCase()
+    a[propName].toLowerCase() === b[propName].toLowerCase()
       ? 0
       : a[propName].toLowerCase() < b[propName].toLowerCase()
       ? -1

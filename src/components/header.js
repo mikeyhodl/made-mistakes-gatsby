@@ -8,7 +8,7 @@ import Menu from './menu'
 
 import style from '../styles/header.module.css'
 
-const Header = props => {
+const Header = (props) => {
   const { siteTitle, mainMenu, defaultTheme } = props
   const defaultThemeState =
     (typeof window !== 'undefined' && window.localStorage.getItem('theme')) ||

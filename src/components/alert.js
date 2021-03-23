@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import style from '../styles/alert.module.css'
 
-const Alert = props => {
+const Alert = (props) => {
   const { type, align, title, content } = props
 
   return (

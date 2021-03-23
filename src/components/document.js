@@ -68,7 +68,7 @@ const Document = ({
           </div>
           {tags ? (
             <div className={style.tags}>
-              {tags.map(tag => (
+              {tags.map((tag) => (
                 <Link
                   className={style.tag}
                   to={`/tag/${_.slugify(tag)}/`}
