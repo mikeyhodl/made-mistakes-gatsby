@@ -37,7 +37,7 @@ module.exports = {
   githubUrl: 'https://github.com/mmistakes',
   instagramUrl: 'https://www.instagram.com/mmistakes/',
   feedUrl: '/atom.xml',
-  githubApiToken: process.env.GITHUB_API_TOKEN,
+  githubApiToken: process.env.GH_API_TOKEN,
   githubApiQuery: `query ($number_of_repos: Int!) {
     viewer {
       name

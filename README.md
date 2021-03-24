@@ -15,7 +15,7 @@ If you're looking for a repo to fork and replace with your own content, I built 
 2. **Add `.env` file to the root with your GitHub API token.**
 
    ```
-   GITHUB_API_TOKEN=yourPersonalGitHubApiToken
+   GH_API_TOKEN=yourPersonalGitHubApiToken
    ```
 
    **Note:** do not commit this file. Builds will fail with a `TypeError: Cannot read property 'match' of undefined` since GitHub repo listing on `/pages/works.js` can't resolve the GraphQL query.

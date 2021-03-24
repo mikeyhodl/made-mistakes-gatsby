@@ -57,7 +57,7 @@ jobs:
           # https://www.gatsbyjs.org/docs/page-build-optimizations-for-incremental-data-changes/
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
           NODE_ENV: production
-          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
           ENVIRONMENT: ${{ contains(github.ref, 'master') && 'production' || 'staging'}}
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
@@ -65,7 +65,7 @@ jobs:
           publish-dir: './public'
           production-branch: master
           production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_API_TOKEN }}
           deploy-message: 'Deploy from GitHub Actions'
           enable-pull-request-comment: false
           enable-commit-comment: false
