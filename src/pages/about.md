@@ -51,7 +51,7 @@ I promise not to junk up your feeds as I rarely post on social media.
     </div>
     <div class="text">
       <div class="name"><a href="https://twitter.com/mmistakes" rel="nofollow">Twitter</a></div>
-      <div class="description">Status updates.</div>
+      <div class="description">Status updates</div>
     </div>
   </li>
   <li>
@@ -60,7 +60,7 @@ I promise not to junk up your feeds as I rarely post on social media.
     </div>
     <div class="text">
       <div class="name"><a href="https://github.com/mmistakes" rel="nofollow">GitHub</a></div>
-      <div class="description">Open source goodies.</div>
+      <div class="description">Open source goodies</div>
     </div>
   </li>
   <li>
@@ -69,7 +69,16 @@ I promise not to junk up your feeds as I rarely post on social media.
     </div>
     <div class="text">
       <div class="name"><a href="https://www.instagram.com/mmistakes/" rel="nofollow">Instagram</a></div>
-      <div class="description">Infrequent pics of my beard and kids.</div>
+      <div class="description">Infrequent pictures</div>
+    </div>
+  </li>
+  <li>
+    <div class="icon" style="background: #000000;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M8.62 12A3.4 3.4 0 0112 8.58a3.4 3.4 0 013.4 3.4 3.4 3.4 0 01-3.4 3.4A3.4 3.4 0 018.62 12zm.15 0A3.24 3.24 0 0012 15.23 3.24 3.24 0 0015.27 12 3.26 3.26 0 0012 8.72 3.26 3.26 0 008.77 12z"/><path d="M12.56 12a.54.54 0 11-.54-.54.54.54 0 01.54.54z"/><path d="M12 7.54a4.43 4.43 0 00-3.08 7.63L7.77 16.4a5.94 5.94 0 001.35 1l.88-1.49A4.44 4.44 0 0016.46 12a4.42 4.42 0 00-1.23-3.06l1.17-1.27a6.38 6.38 0 00-1.34-1l-.82 1.5A4.39 4.39 0 0012 7.54zM6.29 18l-1.18 1.28a10.28 10.28 0 002.1 1.53l.85-1.52A8.37 8.37 0 016.29 18zM17.88 6.08l1.18-1.28a10.4 10.4 0 00-2.12-1.59l-.84 1.53a8.65 8.65 0 011.78 1.34zM16.55 7.51l1.17-1.27A8.15 8.15 0 0016 4.93l-.83 1.52a6.42 6.42 0 011.38 1.06zM7.62 16.57l-1.18 1.27a8.61 8.61 0 001.73 1.26L9 17.59a6.38 6.38 0 01-1.38-1.02z"/><path d="M5.88 12a6.07 6.07 0 001.89 4.4l1.15-1.25a4.43 4.43 0 015.3-7l.82-1.5A6.13 6.13 0 005.88 12zM16.46 12A4.44 4.44 0 0110 15.91l-.84 1.48a6.06 6.06 0 002.9.73A6.14 6.14 0 0016.4 7.67l-1.17 1.25A4.42 4.42 0 0116.46 12z"/><path d="M3.93 12a8.08 8.08 0 002.51 5.86l1.18-1.27a6.36 6.36 0 017.55-10.14L16 4.93A8.09 8.09 0 003.93 12zM18.39 12A6.38 6.38 0 019 17.59l-.83 1.51a8.09 8.09 0 009.55-12.86l-1.17 1.27A6.37 6.37 0 0118.39 12z"/><path d="M20.34 12a8.32 8.32 0 01-12.28 7.29l-.85 1.52a10.05 10.05 0 0011.85-16l-1.18 1.27A8.32 8.32 0 0120.34 12zM2 12a10.07 10.07 0 003.15 7.3L6.29 18A8.31 8.31 0 0112 3.66a8.17 8.17 0 014.1 1.08l.84-1.53A10.05 10.05 0 002 12z"/><path d="M20.37 3.4l-1.16 1.24A10.27 10.27 0 017.1 21l-.86 1.52A12 12 0 0020.37 3.4zM1.74 12a10.27 10.27 0 0115.31-9l.81-1.49A11.94 11.94 0 0012.19 0H12A12 12 0 000 11.88V12a12 12 0 003.77 8.72L5 19.44A10.27 10.27 0 011.74 12z"/></svg>
+    </div>
+    <div class="text">
+      <div class="name"><a href="https://www.discogs.com/user/mmistakes" rel="nofollow">Discogs</a></div>
+      <div class="description">Vinyl records collecting dust</div>
     </div>
   </li>
   <li>
@@ -96,7 +105,7 @@ I promise not to junk up your feeds as I rarely post on social media.
     </div>
     <div class="text">
       <div class="name"><a href="https://my.playstation.com/profile/anotherjpeg" rel="nofollow">Playstation Network</a></div>
-      <div class="description">Platinuming what I can on a slim PS4.</div>
+      <div class="description">Platinuming what I can on a slim PS4</div>
     </div>
   </li>
 </ul>
